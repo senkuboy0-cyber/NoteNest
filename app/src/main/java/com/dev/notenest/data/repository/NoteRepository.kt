@@ -2,7 +2,7 @@ package com.dev.notenest.data.repository
 
 import androidx.lifecycle.LiveData
 import com.dev.notenest.data.local.dao.NoteDao
-import com.dev.notenest.data.local.entity.NoteEntity
+import com.dev.notest.data.local.entity.NoteEntity
 
 class NoteRepository(private val noteDao: NoteDao) {
 
