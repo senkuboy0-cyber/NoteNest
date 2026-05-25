@@ -37,7 +37,7 @@ jobs:
       - name: Rename APK
         run: |
           mkdir -p apk-output
-          cp app/build/outputs/apk/debug/app-debug.apk apk-output/NoteNest-arm64-v8a-debug.apk
+          find app/build/outputs -name "*.apk" -exec cp {} apk-output/NoteNest-arm64-v8a-debug.apk \;
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
