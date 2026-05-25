@@ -15,10 +15,6 @@ A simple and elegant Android todo/notes app built with Kotlin, Room Database, MV
 - Dark mode support
 - Reminder notifications
 
-## Screenshots
-
-*(Coming Soon)*
-
 ## Tech Stack
 
 - Kotlin
@@ -30,16 +26,9 @@ A simple and elegant Android todo/notes app built with Kotlin, Room Database, MV
 - WorkManager
 - Material Design 3
 
-## Package Name
-
-`com.dev.notenest`
-
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/senkuboy0-cyber/NoteNest.git
-    ```
+1. Clone the repository
 2. Open the project in Android Studio
 3. Sync Gradle
 4. Run on emulator or device
@@ -47,7 +36,3 @@ A simple and elegant Android todo/notes app built with Kotlin, Room Database, MV
 ## Author
 
 **Ayon** ([@senkuboy0-cyber](https://github.com/senkuboy0-cyber))
-
-## License
-
-MIT License
