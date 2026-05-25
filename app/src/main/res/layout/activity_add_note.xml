@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/add_note_title"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/note_title_hint"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/on_surface"
+                android:textColorHint="@color/surface_variant"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_small"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:background="@color/surface_variant" />
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/note_description_hint"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:textColor="@color/on_surface"
+                android:textColorHint="@color/surface_variant"
+                android:textSize="@dimen/text_size_body" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_medium"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:background="@color/surface_variant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_low"
+                android:textColor="@color/on_background"
+                android:textSize="@dimen/text_size_body"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priority_low"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/surface_variant" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:text="@string/priority_medium"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/surface_variant" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:text="@string/priority_high"
+                    app:checkedIconVisible="true"
+                    app:chipBackgroundColor="@color/surface_variant" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:backgroundTint="@color/primary"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:text="@string/delete"
+                android:textColor="@color/delete_red"
+                android:visibility="gone"
+                app:strokeColor="@color/delete_red" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
