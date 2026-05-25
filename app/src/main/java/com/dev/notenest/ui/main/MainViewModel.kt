@@ -7,7 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
 import com.dev.notenest.data.local.database.NoteDatabase
-import com.dev.notest.data.local.entity.NoteEntity
+import com.dev.notenest.data.local.entity.NoteEntity
 import com.dev.notenest.data.repository.NoteRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
