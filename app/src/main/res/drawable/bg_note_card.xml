@@ -11,7 +11,4 @@
         android:top="@dimen/padding_medium"
         android:right="@dimen/padding_medium"
         android:bottom="@dimen/padding_medium" />
-    <size
-        android:width="match_parent"
-        android:height="wrap_content" />
 </shape>
