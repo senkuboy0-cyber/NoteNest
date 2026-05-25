@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.dev.notenest.R
-import com.dev.notenest.data.local.entity.NoteEntity
-import com.dev.notenest.utils.DateUtils
+import com.dev.notest.data.local.entity.NoteEntity
+import com.dev.notest.utils.DateUtils
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
