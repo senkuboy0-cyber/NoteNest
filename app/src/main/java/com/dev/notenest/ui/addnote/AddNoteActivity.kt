@@ -1,4 +1,4 @@
-package com.dev.notest.ui.addnote
+package com.dev.notenest.ui.addnote
 
 import android.os.Bundle
 import android.view.View
